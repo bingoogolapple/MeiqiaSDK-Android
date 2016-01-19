@@ -9,7 +9,11 @@ import android.widget.Toast;
 
 import com.meiqia.core.MQManager;
 import com.meiqia.core.callback.OnInitCallBackOn;
+import com.meiqia.externaltest.ExternalTest1;
+import com.meiqia.externaltest.ExternalTest2;
 import com.meiqia.meiqiasdk.activity.MQConversationActivity;
+import com.meiqia.meiqiasdk.internaltest.InternalTest1;
+import com.meiqia.meiqiasdk.internaltest.InternalTest2;
 import com.meiqia.meiqiasdk.util.MQUtils;
 
 import java.util.List;
@@ -40,6 +44,22 @@ public class MainActivity extends Activity implements EasyPermissions.Permission
             }
         });
 
+
+        ExternalTest1 externalTest1 = new ExternalTest1();
+        externalTest1.test1();
+        externalTest1.test2();
+
+        ExternalTest2 externalTest2 = new ExternalTest2();
+        externalTest2.test1();
+        externalTest2.test2();
+
+        InternalTest1 internalTest1 = new InternalTest1();
+        internalTest1.test1();
+        internalTest1.test2();
+
+        InternalTest2 internalTest2 = new InternalTest2();
+        internalTest2.test1();
+        internalTest2.test2();
     }
 
     /**
